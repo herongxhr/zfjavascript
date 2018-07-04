@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数组去重</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    var ary = [1,1,2,2,2,3,4,7,5,5,3,3,3];
+
+    // //一、排序法
+    // function sortAry (ary){
+    //     //定义排序方法
+    //     ary.sort(function (a,b) {
+    //         return a-b
+    //     });
+    //     //遍历数组，将数组与相邻元素比较，相等则删除
+    //     for(var i=0;i<ary.length;i++){
+    //         //如果当前元素与下一个元素相等
+    //         if(ary[i]=== ary[i+1]){
+    //             ary.splice(i,1);
+    //             //删除当前元素后，后续元素索引会减一，塌陷的问题
+    //             //让计数器减一,从被删除元素同值的下一元素继续循环比较
+    //             i--;
+    //         }
+    //     }
+    //     return ary;
+    // }
+
+    // //二，索引法，加元素法
+    // function indexArr(ary) {
+    //     let newArr = [];
+    //     for (var i=0;i<ary.length;i++){
+    //         if(newArr.indexOf(ary[i])===-1){
+    //             newArr[newArr.length]=ary[i];
+    //         }
+    //     }
+    //     return newArr;
+    // }
+
+    //二，索引法，减元素法
+    function indexArr(ary) {
+        for (var i=0;i<ary.length;i++){
+            if (ary.slice(i+1).indexOf(ary[i])>=0){
+                ary.splice(i,1);
+                i--;
+            }
+        }
+        return ary;
+    }
+
+    console.log(indexArr(ary));
+
+</script>
