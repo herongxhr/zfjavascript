@@ -1,7 +1,0 @@
-#WebStrom
-.idea
-
-#dependencies
-node_modules
-
-.gitignore
