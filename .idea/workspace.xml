@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="89ac4992-eb28-44ba-a773-ba4c6be4862a" name="Default" comment="" />
+    <list default="true" id="89ac4992-eb28-44ba-a773-ba4c6be4862a" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/array/removingDuplicate.html" beforeDir="false" afterPath="$PROJECT_DIR$/array/removingDuplicate.html" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -14,11 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="数组去重.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/数组/数组去重.html">
+      <file leaf-file-name="removingDuplicate.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/array/removingDuplicate.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="554">
-              <caret line="46" column="23" lean-forward="true" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
+            <state relative-caret-position="630">
+              <caret line="44" column="13" lean-forward="true" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -39,6 +43,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/数组/数组去重.html" />
+        <option value="$PROJECT_DIR$/array/removingDuplicate.html" />
       </list>
     </option>
   </component>
@@ -51,7 +56,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
     <option name="width" value="1294" />
     <option name="height" value="1047" />
@@ -74,7 +79,7 @@
             <path>
               <item name="zfjavascript" type="b2602c69:ProjectViewProjectNode" />
               <item name="zfjavascript" type="462c0819:PsiDirectoryNode" />
-              <item name="数组" type="462c0819:PsiDirectoryNode" />
+              <item name="array" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -88,6 +93,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -111,16 +117,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1530694316904</updated>
-      <workItem from="1530694318548" duration="929000" />
+      <workItem from="1530694318548" duration="4286000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="929000" />
+    <option name="totallyTimeSpent" value="4286000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1294" height="1047" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16242038" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -148,10 +153,10 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/数组/数组去重.html">
+    <entry file="file://$PROJECT_DIR$/array/removingDuplicate.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="554">
-          <caret line="46" column="23" lean-forward="true" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
+        <state relative-caret-position="630">
+          <caret line="44" column="13" lean-forward="true" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
         </state>
       </provider>
     </entry>

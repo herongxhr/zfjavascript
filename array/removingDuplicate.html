@@ -9,7 +9,7 @@
 </body>
 </html>
 <script>
-    var ary = [1,1,2,2,2,3,4,7,5,5,3,3,3];
+    var ary = [1, 1, 2, 2, 2, 3, 4, 7, 5, 5, 3, 3, 3];
 
     // //一、排序法
     // function sortAry (ary){
@@ -30,28 +30,22 @@
     //     return ary;
     // }
 
-    // //二，索引法，加元素法
-    // function indexArr(ary) {
-    //     let newArr = [];
-    //     for (var i=0;i<ary.length;i++){
-    //         if(newArr.indexOf(ary[i])===-1){
-    //             newArr[newArr.length]=ary[i];
-    //         }
-    //     }
-    //     return newArr;
-    // }
-
-    //二，索引法，减元素法
+    //二，索引法，加元素法
     function indexArr(ary) {
-        for (var i=0;i<ary.length;i++){
-            if (ary.slice(i+1).indexOf(ary[i])>=0){
-                ary.splice(i,1);
-                i--;
+        let newArr = [];
+        for (var i = 0; i < ary.length; i++) {
+            if (newArr.indexOf(ary[i]) === -1) {
+                newArr[newArr.length] = ary[i];
             }
         }
-        return ary;
+        return newArr;
     }
 
+
+    //三、对象去重法
+
+
     console.log(indexArr(ary));
+
 
 </script>
