@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动画封装</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #box {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100px;
+            height: 100px;
+            background: orangered;
+        }
+    </style>
+</head>
+<body>
+<div id="box"></div>
+<script src="js/animate.js"></script>
+<script>
+    //获取元素
+    let box = document.getElementById('box');
+
+    //定义动画的触发事件
+    box.onclick = function () {
+        //让盒子从左移到最右边
+        let boxL = document.body.clientWidth - box.offsetWidth;
+        //动画函数
+        animate(this, {left: boxL}, 2000);
+    };
+</script>
+</body>
+</html>
