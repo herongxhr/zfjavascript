@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>鼠标跟随</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+
+        }
+        .container .imgBox li{
+
+        }
+        .container .imgBox li:nth-last-child(1){
+
+        }
+
+    </style>
+</head>
+<body>
+<section class="container">
+    <ul class="imgBox">
+        <li><img src="img/apple_1.jpg" alt=""></li>
+        <li><img src="img/apple_2.jpg" alt=""></li>
+        <li><img src="img/apple_3.jpg" alt=""></li>
+        <li><img src="img/apple_4.jpg" alt=""></li>
+    </ul>
+    <div class="mark">
+        <img src="img/apple_1_bigger.jpg" alt="">
+    </div>
+</section>
+
+<script>
+    //方案一：每一个li中都有一个大盒子，大盒子中存放的是大图，开始是隐藏的，鼠标进入到li中，让其显示，并且让他的位置跟随鼠标的位置改变即可；鼠标离开li，让自己的大盒子消失即可（类似于放大镜small-box中出现mark)
+    //方案二：只有一个大盒子（可以在js中动态创建，也可以事先写好，控制显示隐藏），鼠标进入任意一个li
+</script>
+</body>
+</html>

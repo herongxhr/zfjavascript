@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#list{
+    width:100%;
+    list-style: none;
+}
+#list li{
+    height:80px;
+    border-bottom:1px dashed lightblue;
+    padding-top:10px;
+    padding-left :10px;
+}
+#list li img{
+    width:75px;
+    height:60px;
+    float:left;
+    margin-right:10px;
+    opacity:0;
+}

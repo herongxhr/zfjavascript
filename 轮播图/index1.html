@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<div id="box" style="width:100px;height:100px;border:1px solid"></div>
+<script>
+    let box = document.getElementById('box');
+    console.log(box);
+    box.onclick = function () {
+        let minL = 0;
+        let maxL = document.documentElement.clientWidth - box.offsetWidth;
+
+        let step = 10;
+        let autoTimer = setInterval(() => {
+            let curL = box.offsetLeft;
+            curL += step;
+            //如果下一次运动后超出最大距离
+            if (curL >= maxL) {
+                //1。直接运动到最大距离
+                box.style.left = maxL + 'px';
+                //2。清除定时器
+                clearInterval(autoTimer);
+                //3。返回，下面代码不再执行
+                return
+            }
+            box.style.left = curL + 'px';
+        }, 17)
+    };
+
+    //固定时间的匀速运动
+    let duration = 3000;//总时间
+    let interval = 17;//动画频率，多长时间变化一次
+    let change = maxL - 0;//总距离：目标值target-起始值begin
+    let time = 0;//已经运动的时间
+    let target = maxL;//目标位置
+
+    let autoTimer = setInterval(() => {
+        time += interval;
+        if (time >= duration) {
+            box.style.left = target+'px';
+            clearInterval(autoTimer);
+            return;
+        }
+        let curL = time / duration * change + begin;
+        box.style.left = curL + 'px';
+    }, interval)
+
+
+    //第一种思路：步长=总距离/总时间*频率，剩下变为固定步长的匀速运动了
+    //第二种思路：在Js中基于定时器完成动画，不论是固定步长还是固定时间，只要算出当前盒子的位置，然后让盒子运动到该位置即可（新的位置信息）
+    //time:当前动画已经花费的时间
+    //duration:动画总共的时间
+    //begin:起始位置
+    //current:当前位置
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style: none;
+            width:480px;
+            height:640px;
+            padding:10px;
+            margin:10px auto;
+            position: relative;
+            background: yellow;
+        }
+        ul li{
+            width:150px;
+            height:150px;
+            background: greenyellow;
+            float :left;
+            margin:5px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            cursor: move;
+        }
+
+        ul li img{
+            width:150px;
+            height:150px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            /*不让用户拖拽*/
+            -webkit-user-drag: none;
+        }
+
+    </style>
+</head>
+<body>
+<ul>
+    <li><img src="img/1.png" alt=""></li>
+    <li><img src="img/2.png" alt=""></li>
+    <li><img src="img/3.png" alt=""></li>
+    <li><img src="img/4.png" alt=""></li>
+    <li><img src="img/5.png" alt=""></li>
+    <li><img src="img/6.png" alt=""></li>
+    <li><img src="img/7.png" alt=""></li>
+    <li><img src="img/8.png" alt=""></li>
+    <li><img src="img/9.png" alt=""></li>
+    <li><img src="img/10.png" alt=""></li>
+    <li><img src="img/11.png" alt=""></li>
+    <li><img src="img/12.png" alt=""></li>
+</ul>
+<script src="js/event.js"></script>
+<script>
+    //操作谁，获取谁
+    let oList = document.getElementsByTagName('li');
+    //li设置position之后，脱离了文档流，剩下的图片会向前排列；所以每次得到位置都是一样的。
+
+    for (let i = oList.length - 1; i >= 0; i--) {
+        let cur = oLis[i];
+        cur.style.left = cur.offsetLeft+"px";
+        cur.style.top = cur.offsetTop + "px";
+        cur.style.position = "absolute";
+        cur.style.margin="0px";
+        new Drag(cur).on("selfdown",changeIndex).on("dragStart",isHit);
+    }
+    let zIndex = 1;
+    function changeIndex()  {
+
+
+    }
+
+    function isHit() {
+        //this.ele 与 所有的li比较，看是否有交集
+        let dragLi = this.ele;
+        for (let i = 0; i < oList.length; i++) {
+            let cur = oList[i];
+            if(cur === dragLi)continue;
+            if(dragLi.offset + dragLi.offsetWidth)
+
+
+        }
+    }
+</script>
+</body>
+</html>

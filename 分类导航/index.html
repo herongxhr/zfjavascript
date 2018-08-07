@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>分类导航</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu-box {
+            margin: 20px auto;
+            width: 700px;
+            height: 270px;
+            border: 1px solid lightgray;
+        }
+
+        .nav-box {
+            float: left;
+            width: 200px;
+        }
+
+        .nav-box ul li {
+            list-style: none;
+            padding: 0 10px;
+            height: 30px;
+            line-height: 30px
+        }
+
+        .nav-box ul li a {
+            display: block;
+            height: 100%;
+            font-size: 14px;
+            color: black;
+        }
+
+        .detail-box {
+            display: none;
+            float: left;
+            width: 500px;
+            height: 100%;
+            background: #eee;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+<section class="menu-box">
+    <nav class="nav-box">
+        <ul>
+            <li><a href="#" target="_blank">导航1</a></li>
+            <li><a href="#" target="_blank">导航2</a></li>
+            <li><a href="#" target="_blank">导航3</a></li>
+            <li><a href="#" target="_blank">导航4</a></li>
+            <li><a href="#" target="_blank">导航5</a></li>
+            <li><a href="#" target="_blank">导航6</a></li>
+            <li><a href="#" target="_blank">导航7</a></li>
+            <li><a href="#" target="_blank">导航8</a></li>
+            <li><a href="#" target="_blank">导航9</a></li>
+        </ul>
+    </nav>
+    <div class="detail-box">导航1对应的详情内容</div>
+</section>
+<script>
+    //基于事件委托，给最外层的盒子的mouseover绑定方法
+    let menuBox = document.getElementsByClassName('menu-box')[0];
+    let detailBox = document.getElementsByClassName('detail-box')[0];
+    document.onmouseover = function (e) {
+        console.log(e);
+        let target = e.target;
+        console.log(target);
+        let tag = target.tagName;
+        console.log(tag);
+        let targetClass = target.className;
+        console.log(targetClass);
+        let tagText = target.text;
+        //获取祖先元素
+        //let parents = tag.parents();
+        //let flag = parents.filter('.nav-box').length > 0;
+        if (tag === 'A' || tag === 'LI' || target.className === 'detail-box') {
+            detailBox.style['display'] = 'block';
+            detailBox.innerHTML = 1;
+            return;
+        }
+        //
+        // //如果事件源是detailBox或者是它的后代元素，不做处理
+        // if(target.hasClass('detailBox')){
+        //     detailBox.stopPropagation();
+        //
+        // }
+    }
+</script>
+</body>
+</html>
