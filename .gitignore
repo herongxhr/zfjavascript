@@ -1,9 +1,14 @@
+#根据上面的实例我们总结，在.gitignore文件当中，一行代表一条忽略规则，如果是一个带“.”这种有后缀的字符串那么git就会忽略这个文件。
+#“*”表示的就是选中所有，如果没有“.”就表示一个文件夹。
+#上面的node_modules也可以不加“/”，“/”的主要目的是为了表示路径，比如你有可能想要忽略掉node_modules/app文件夹那么就会用到“/”。
+
 #node
-node_modules
+node_modules/
+*.json
 package.json
 package-lock.json
 
 #WebStrom
-.idea
+.idea/
 
 #npm or yarn log
