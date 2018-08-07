@@ -1,0 +1,111 @@
+@import "reset.min.less";
+/*
+*虽然移动端（安卓和IOS）上的浏览器大部分都是webkit内核的，
+*但是由于很多手机操作系统版本过低（尤其是安卓手机），
+*导致很多CSS3新特性不能有效识别，此时我们使用的大部分CSS3属性
+*都要写两套才能兼容（加前缀的在前，不加的在后）
+*-webkit-animation
+*animation
+*prefixfree.min.js可以解决这个问题
+*如果觉得使用插件太多麻烦，也可以直接写两套
+*如果在pc端上要写五套
+*
+*/
+html {
+  //640px设计稿尺寸中：1rem=100px
+  font-size: 100px;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+  background: #f4f4f4;
+}
+
+.main-box {
+  margin: 0 auto;
+  max-width: 640px;
+  //height指设备浏览器窗口高度
+  height: 100%;
+  background: #fff;
+}
+
+.loading-box {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+//loading区域
+.loading-box {
+  background: #000;
+  .title {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    //-0.7（正中间）+(-1.5)（距离中间靠上的位移）
+    margin-top: -2.2rem;
+    width: 100%;
+    height: 1.4rem;
+    color: #fff;
+
+    h1 {
+      line-height: 0.75rem;
+      font-size: 0.5rem;
+      text-align: center;
+    }
+    h2 {
+      margin-top: 0.2rem;
+      line-height: 0.45rem;
+      font-size: 0.26rem;
+      text-align: center;
+      letter-spacing: 0.04rem;
+
+    }
+
+  }
+
+  //进度条
+  .progress {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -1.5rem 0 0 -2.3rem;
+    width: 4.6rem;
+    height: 0.3rem;
+    background: #fff;
+  }
+
+  .current {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: -webkit-linear-gradient(left bottom, #5cb85c 0%, #5cb85c 25%, #74c274 25%, #74c274 50%, #5cb85c 50%, #5cb85c 75%, #74c274 75%, #74c274 100%);
+    background: linear-gradient(left bottom, #5cb85c 0%, #5cb85c 25%, #74c274 25%, #74c274 50%, #5cb85c 50%, #5cb85c 75%, #74c274 75%, #74c274 100%);
+    background-size: 0.3rem 0.3rem;
+    /*
+    *animation 属性是一个简写属性，用于设置六个动画属性：
+    *animation-name	规定需要绑定到选择器的 keyframe 名称。。
+    *animation-duration	规定完成动画所花费的时间，以秒或毫秒计。
+    *animation-timing-function	规定动画的速度曲线。
+    *animation-delay	规定在动画开始之前的延迟。
+    *animation-iteration-count	规定动画应该播放的次数。
+    *animation-direction	规定是否应该轮流反向播放动画。
+    *如果 animation-direction 值是 "alternate"，则动画会在奇数次数（1、3、5 等等）正常播放，而在偶数次数（2、4、6 等等）向后播放。注释：如果把动画设置为只播放一次，则该属性没有效果。
+    */
+    animation:loadingMove 0.5s linear 0s infinite both;
+  }
+}
+
+@keyframes loadingMove {
+  0% {
+    background-position: 0 0;
+
+  }
+
+  100% {
+    background-position: 0 -0.3rem;
+  }
+}

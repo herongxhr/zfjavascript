@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet/less" href="css/index.less">
+    <script src="js/less-2.5.3.min.js"></script>
+    <script src="js/prefixfree.min.js"></script>
+    <!--rem-->
+    <script>
+        //根据当前设备的宽度，动态计算出rem的换算比例，实现页面中元素的等比缩放
+        ~function anonymous(window) {
+            let computedRem = function computedRem() {
+                let winW = document.documentElement.clientWidth;
+                console.log(winW);
+                //设计稿的宽度
+                let designW = 640;
+                //大于640，font-size设计成100px
+                if (winW >= 640) {
+                    document.documentElement.style.fontSize = '100px';
+
+                } else {
+                    document.documentElement.style.fontSize = winW / designW * 100 + 'px';
+                }
+            };
+            computedRem();
+            //当窗口大小变化时，重新执行computedRem()
+            window.addEventListener('resize', computedRem);
+
+        }(window);
+    </script>
+</head>
+<body>
+<!--外层套一层main-box:控制当前页面的最大宽度，防止把做好的页面在PC端预览的时候满屏展示，这样字体和盒子大小等不会被肆意拉伸-->
+<main class="main-box">
+    <!--loading区域-->
+    <section class="loading-box">
+        <div class="title">
+            <h1>珠峰培训</h1>
+            <h2>H5场景交互型简历</h2>
+        </div>
+        <div class="progress">
+            <div class="current"></div>
+        </div>
+    </section>
+</main>
+</body>
+</html>
