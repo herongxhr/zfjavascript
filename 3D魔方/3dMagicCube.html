@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            width: 320px;
+            height: 560px;
+            background: url("img/zf_cubeBg.jpg");
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-top: -160px;
+            margin-left: -280px;
+            /*perspective 属性定义 3D 元素距视图的距离，以像素计。该属性允许您改变 3D 元素查看 3D 元素的视图。*/
+            /*当为元素定义 perspective 属性时，其子元素会获得透视效果，而不是元素本身。*/
+            /*注释：perspective 属性只影响 3D 转换元素。*/
+            /*提示：请与 perspective-origin 属性一同使用该属性，这样您就能够改变 3D 元素的底部位置*/
+            /*perspective: number|none;*/
+            /*值	描述*/
+            /*number 元素距离视图的距离，以像素计。*/
+            /*none	默认值。与 0 相同。不设置透视。*/
+            -webkit-perspective: 3000px;
+            perspective: 3000px;
+        }
+
+        .ul {
+            /*transform-style 属性规定如何在 3D 空间中呈现被嵌套的元素。*/
+            /*注释：该属性必须与 transform 属性一同使用。*/
+            /*默认值：	flat*/
+            /*继承性：	no*/
+            /*版本：	CSS3*/
+            /*JavaScript 语法：	object.style.transformStyle="preserve-3d"*/
+            /*transform-style: flat|preserve-3d;*/
+            /*值	描述*/
+            /*flat	子元素将不保留其 3D 位置。*/
+            /*preserve-3d	子元素将保留其 3D 位置。*/
+            transform-style: preserve-3d;
+            list-style: none;
+            width: 255px;
+            height: 255px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -127.5px;
+            margin-top: -127.5px;
+            animation: move 10s linear 0s infinite;
+            transform-origin: center center;
+
+        }
+        @keyframes move {
+            0%{
+                transform: translate(50px) scale(0.6) rotateY(30deg);
+            }
+            25%{
+                transform: translate(100px) scale(0.6) rotateY(270deg);
+            }
+            50%{
+                transform: translate(-50px) scale(0.6) rotateY(0deg);
+            }
+            75%{
+                transform: translate(100px) scale(0.6) rotateX(180deg);
+            }
+            100%{
+                transform: translate(50px) scale(0.6) rotateZ(120deg);
+            }
+        }
+
+        .ul li {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+
+        .ul li div {
+            width: 100%;
+            height: 100%;
+            /*通过加大文字字号实现垂直居中*/
+            font-size:180px;
+            color:white;
+            text-align:center;
+        }
+
+        .ul li:nth-child(1){
+            background:darkred;
+            transform:translateZ(127.5px) ;
+        }
+        .ul li:nth-child(2){
+            background:greenyellow;
+            transform: translateX(127.5px) rotateY(90deg) ;
+        }
+        .ul li:nth-child(3){
+            background:darkgreen;
+            transform: translateZ(-127.5px) rotateY(180deg);
+        }
+        .ul li:nth-child(4){
+            background:orange;
+            transform: translateX(-127.5px) rotateY(-90deg) ;
+        }
+        .ul li:nth-child(5){
+            background:darkblue;
+            transform:  translateY(127.5px) rotateX(-90deg);
+        }
+        .ul li:nth-child(6){
+            background:deeppink;
+            transform:translateY(-127.5px) rotateX(90deg);
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="main">
+    <ul class="ul">
+        <li>
+            <div>1</div>
+        </li>
+        <li>
+            <div>2</div>
+        </li>
+        <li>
+            <div>3</div>
+        </li>
+        <li>
+            <div>4</div>
+        </li>
+        <li>
+            <div>5</div>
+        </li>
+        <li>
+            <div>6</div>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

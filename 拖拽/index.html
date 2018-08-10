@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html,body{
+            height: 500%;
+        }
+        /*遮罩层*/
+        .dialog-mark{
+            position:fixed;
+            top: 0;
+            left: 0;
+            z-index:1000;
+            width: 100%;
+            height: 100%;
+            background:rgba(0,0,0,0.3);
+        }
+        /*模态框*/
+        .dialog-box{
+            position:fixed;
+            /*控制盒子在中间我们最好在js中实现，经过精密的计算，算出具体的top和left值，而不是模糊的百分比*/
+            /*然后通过js控制top和left位置*/
+            /*left: 50%;*/
+            /*top: 50%;*/
+            z-index:1001;
+            width: 200px;
+            height: 300px;
+
+            /*不设置颜色则为透明色*/
+            background:white;
+            overflow:hidden;
+        }
+        .dialog-box h3{
+            /*关闭按钮要相对标题区定位，加上position样式*/
+            position:relative;
+            padding:0 10px;
+            height: 35px;
+            line-height: 35px;
+            background:#ddd;
+            border-bottom:1px solid #aaa;
+            cursor:move;
+            -webkit-user-select: none;
+        }
+        .dialog-box h3 i{
+            position:absolute;
+            right:10px;
+            top: 50%;
+            margin-top:-10px;
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+            text-align:center;
+            /*定制X的样式*/
+            font-size: 16px;
+            color:#e01d20;
+            font-style:normal;
+            /*CSS 字体系列
+             *在 CSS 中，有两种不同类型的字体系列名称：
+             *通用字体系列 - 拥有相似外观的字体系统组合（比如 "Serif" 或 "Monospace"）
+             *特定字体系列 - 具体的字体系列（比如 "Times" 或 "Courier"）
+             *除了各种特定的字体系列外，CSS 定义了 5 种通用字体系列：
+             *Serif 字体
+             *Sans-serif 字体
+             *Monospace 字体
+             *Cursive 字体
+             *Fantasy 字体
+             *注意：使用某种特定的字体系列（Geneva）完全取决于用户机器上该字体系列是否可用；
+             *这个属性没有指示任何字体下载。因此，强烈推荐使用一个通用字体系列名作为后路。*/
+            /*font-family:"Microsoft JhengHei",Georgia,Serif;*/
+            cursor:pointer;
+        }
+    </style>
+
+</head>
+<body>
+<!--遮罩层-->
+<div class="dialog-mark"></div>
+<!--dialog：模态框（弹出框）-->
+<div class="dialog-box">
+    <!--标题区域-->
+    <h3 class="title">
+        珠峰培训模态框
+        <!--关闭图标-->
+        <i>x</i>
+    </h3>
+    <!--内容区-->
+    <div class="content"></div>
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/drag.js"></script>
+</body>
+</html>
