@@ -10,7 +10,7 @@
     <!--rem-->
     <script>
         //根据当前设备的宽度，动态计算出rem的换算比例，实现页面中元素的等比缩放
-        ~function anonymous(window) {
+        ~function anonymous() {
             let computedRem = function computedRem() {
                 let winW = document.documentElement.clientWidth;
                 console.log(winW);
@@ -28,7 +28,7 @@
             //当窗口大小变化时，重新执行computedRem()
             window.addEventListener('resize', computedRem);
 
-        }(window);
+        }();
     </script>
 </head>
 <body>

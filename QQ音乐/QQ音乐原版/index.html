@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QQ音乐</title>
+    <script>
+        // 为了避免全局变量的干扰；计算rem;
+        (function () {
+            function computeFontSize() {
+                let winW = document.documentElement.clientWidth;
+                if (winW >= 750) {
+                    document.documentElement.style.fontSize = '100px';
+                } else {
+                    document.documentElement.style.fontSize = winW / 750 * 100 + 'px';
+                }
+            }
+            computeFontSize();
+            // 当窗口发生改变，立即重新计算HTML的fontSize 属性的属性值；
+            window.addEventListener('resize', computeFontSize);
+        })();
+
+    </script>
+</head>
+<body>
+<main class="main-box">
+    <!--模糊背景图-->
+    <img src="" alt="" class="backgroundIMg">
+    <div class="backgroundMark"></div>
+
+    <!--audio-->
+    <audio src="img/myDream.m4a" preload="none"></audio>
+
+    <!--头部区域-->
+    <header class="header-box">
+        <img src="" alt="" class="pic">
+        <div class="title">
+            <h1>我的梦-My Dream</h1>
+            <h2>张靓颖</h2>
+            <a href="javascript:;" class="playBtn"></a>
+        </div>
+    </header>
+
+    <!--内容区域-->
+    <section class="content-box">
+        <div class="wrapper">
+
+        </div>
+    </section>
+
+    <!--尾部区域-->
+    <footer class="footer-box">
+        <div class="progress-box"><span class="already">00:00</span>
+            <div class="progress">
+                <div class="current"></div>
+                <span class="duration">03:00</span>
+            </div>
+        </div>
+        <a href="javascript:;" class="downloadBtn">下载这首歌曲</a>
+    </footer>
+</main>
+</body>
+</html>
