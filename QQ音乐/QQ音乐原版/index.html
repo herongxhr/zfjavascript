@@ -2,13 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QQ音乐</title>
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet/less" href="css/index.less">
+    <!--导入less.js编译less文件-->
+    <script src="js/less-2.5.3.min.js"></script>
+    <script src="js/prefixfree.min.js"></script>
     <script>
         // 为了避免全局变量的干扰；计算rem;
-        (function () {
+        (function (window) {
             function computeFontSize() {
                 let winW = document.documentElement.clientWidth;
-                if (winW >= 750) {
+                if (winW >= 640) {
                     document.documentElement.style.fontSize = '100px';
                 } else {
                     document.documentElement.style.fontSize = winW / 750 * 100 + 'px';
@@ -17,22 +23,22 @@
             computeFontSize();
             // 当窗口发生改变，立即重新计算HTML的fontSize 属性的属性值；
             window.addEventListener('resize', computeFontSize);
-        })();
+        })(window);
 
     </script>
 </head>
 <body>
 <main class="main-box">
     <!--模糊背景图-->
-    <img src="" alt="" class="backgroundIMg">
-    <div class="backgroundMark"></div>
+    <img src="img/myDream.jpg" alt="" class="background-img">
+    <div class="background-mark"></div>
 
     <!--audio-->
     <audio src="img/myDream.m4a" preload="none"></audio>
 
     <!--头部区域-->
     <header class="header-box">
-        <img src="" alt="" class="pic">
+        <img src="img/myDream.jpg" alt="" class="pic">
         <div class="title">
             <h1>我的梦-My Dream</h1>
             <h2>张靓颖</h2>
