@@ -20,6 +20,7 @@
                     document.documentElement.style.fontSize = winW / 750 * 100 + 'px';
                 }
             }
+
             computeFontSize();
             // 当窗口发生改变，立即重新计算HTML的fontSize 属性的属性值；
             window.addEventListener('resize', computeFontSize);
@@ -34,7 +35,7 @@
     <div class="background-mark"></div>
 
     <!--audio-->
-    <audio src="img/myDream.m4a" preload="none"></audio>
+    <audio src="img/myDream.m4a" preload="none" id="musicAudio"></audio>
 
     <!--头部区域-->
     <header class="header-box">
@@ -55,14 +56,17 @@
 
     <!--尾部区域-->
     <footer class="footer-box">
-        <div class="progress-box"><span class="already">00:00</span>
+        <div class="progress-box">
+            <span class="already">00:00</span>
             <div class="progress">
                 <div class="current"></div>
-                <span class="duration">03:00</span>
             </div>
+            <span class="duration">00:00</span>
         </div>
         <a href="javascript:;" class="downloadBtn">下载这首歌曲</a>
     </footer>
 </main>
+<script src="js/zepto.min.js"></script>
+<script src="js/index.js"></script>
 </body>
 </html>
