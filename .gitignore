@@ -9,6 +9,7 @@ package.json
 package-lock.json
 
 #WebStrom
+.idea
 
 
 #npm or yarn log

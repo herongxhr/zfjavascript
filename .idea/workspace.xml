@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9946d424-51ed-4a84-8ee9-db9ad01b8c1b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/QQ音乐/QQ音乐原版/css/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/QQ音乐/QQ音乐原版/css/index.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QQ音乐/QQ音乐原版/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/QQ音乐/QQ音乐原版/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QQ音乐/QQ音乐原版/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/QQ音乐/QQ音乐原版/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,32 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="jquery.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/jquery/dist/jquery.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="439">
-              <caret line="578" selection-start-line="578" selection-end-line="2713" />
-              <folding>
-                <element signature="e#1157#1180#0" />
-                <element signature="e#5831#12906#0" />
-                <element signature="e#13566#14033#0" />
-                <element signature="e#14047#14258#0" />
-                <element signature="e#14279#75019#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jqueryStudy/sizzle/README.md">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="sizzle.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sizzle.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jqueryStudy/sizzle/dist/sizzle.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5795">
-              <caret line="569" column="52" selection-start-line="569" selection-start-column="52" selection-end-line="569" selection-end-column="52" />
+            <state relative-caret-position="266">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
               <folding>
                 <element signature="e#4205#4622#0" />
                 <element signature="e#4838#5247#0" />
@@ -75,11 +52,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jquery.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="jquery.js" pinned="false" current-in-tab="true">
         <entry file="file://F:/node_modules/jquery/dist/jquery.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="706">
-              <caret line="10362" column="11" selection-start-line="10362" selection-start-column="11" selection-end-line="10362" selection-end-column="11" />
+            <state relative-caret-position="-7">
+              <caret line="3224" column="18" selection-start-line="3224" selection-end-line="3416" selection-end-column="2" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#2346#2394#0" />
@@ -94,7 +71,7 @@
                 <element signature="e#77685#78318#0" />
                 <element signature="e#78365#78678#0" />
                 <element signature="e#78699#79745#0" />
-                <element signature="e#80174#82714#0" />
+                <element signature="e#80483#82326#0" />
                 <element signature="e#83125#85013#0" />
                 <element signature="e#85135#86519#0" />
                 <element signature="e#86593#87108#0" />
@@ -186,6 +163,15 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="callback.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jqueryStudy/sizzle/dist/callback/callback.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3648">
+              <caret line="192" column="2" selection-start-line="192" selection-start-column="2" selection-end-line="192" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -194,6 +180,11 @@
         <option value="JavaScript File" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>fn.init</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -206,6 +197,7 @@
         <option value="$PROJECT_DIR$/QQ音乐/QQ音乐原版/css/index.less" />
         <option value="$PROJECT_DIR$/QQ音乐/QQ音乐原版/js/index.js" />
         <option value="$PROJECT_DIR$/jqueryStudy/sizzle/sizzle.js" />
+        <option value="$PROJECT_DIR$/jqueryStudy/sizzle/dist/callback/callback.js" />
       </list>
     </option>
   </component>
@@ -227,7 +219,7 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1273" />
+    <option name="x" value="-7" />
     <option name="width" value="1294" />
     <option name="height" value="1047" />
   </component>
@@ -270,7 +262,7 @@
               <item name="jqueryStudy" type="462c0819:PsiDirectoryNode" />
               <item name="sizzle" type="462c0819:PsiDirectoryNode" />
               <item name="dist" type="462c0819:PsiDirectoryNode" />
-              <item name="sizzle.js" type="620a8d5e:NestingTreeNode" />
+              <item name="callback" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -312,17 +304,17 @@
       <workItem from="1534068810221" duration="1094000" />
       <workItem from="1534246122011" duration="6008000" />
       <workItem from="1534332430126" duration="9537000" />
-      <workItem from="1534407959211" duration="6689000" />
+      <workItem from="1534407959211" duration="9927000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28030000" />
+    <option name="totallyTimeSpent" value="31268000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1273" y="0" width="1294" height="1047" extended-state="0" />
+    <frame x="935" y="61" width="1495" height="1047" extended-state="1" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21019109" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.21019109" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -330,7 +322,7 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32929516" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.8821586" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -467,10 +459,88 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/jqueryStudy/sizzle/sizzle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2999">
+          <caret line="994" column="34" selection-start-line="994" selection-start-column="34" selection-end-line="994" selection-end-column="34" />
+          <folding>
+            <element signature="e#13#224#0" />
+            <element signature="e#6176#9227#0" />
+            <element signature="e#9616#9945#0" />
+            <element signature="e#10255#10524#0" />
+            <element signature="e#10747#10857#0" />
+            <element signature="e#11070#11459#0" />
+            <element signature="e#12107#12496#0" />
+            <element signature="e#13059#13323#0" />
+            <element signature="e#13596#24551#0" />
+            <element signature="e#24698#25518#0" />
+            <element signature="e#28101#42938#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jqueryStudy/sizzle/README.md">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/jquery/dist/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4334">
+          <caret line="2714" lean-forward="true" selection-start-line="2714" selection-end-line="2714" />
+          <folding>
+            <element signature="e#1157#1180#0" />
+            <element signature="e#5831#12906#0" />
+            <element signature="e#13566#14033#0" />
+            <element signature="e#14047#14258#0" />
+            <element signature="e#14279#75019#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jqueryStudy/sizzle/dist/sizzle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="e#4205#4622#0" />
+            <element signature="e#4838#5247#0" />
+            <element signature="e#5889#6250#0" />
+            <element signature="e#6307#9956#0" />
+            <element signature="e#6831#9863#0" />
+            <element signature="e#10895#11163#0" />
+            <element signature="e#12756#14652#0" />
+            <element signature="e#14780#15169#0" />
+            <element signature="e#16269#28277#0" />
+            <element signature="e#28424#29188#0" />
+            <element signature="e#29434#29982#0" />
+            <element signature="e#30305#30889#0" />
+            <element signature="e#31050#31834#0" />
+            <element signature="e#31863#46643#0" />
+            <element signature="e#34308#40911#0" />
+            <element signature="e#40924#46641#0" />
+            <element signature="e#47420#48322#0" />
+            <element signature="e#48808#50720#0" />
+            <element signature="e#50758#50988#0" />
+            <element signature="e#51237#51555#0" />
+            <element signature="e#51647#54221#0" />
+            <element signature="e#54260#56226#0" />
+            <element signature="e#56294#59662#0" />
+            <element signature="e#59743#60419#0" />
+            <element signature="e#60821#62944#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jqueryStudy/sizzle/dist/callback/callback.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3648">
+          <caret line="192" column="2" selection-start-line="192" selection-start-column="2" selection-end-line="192" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://F:/node_modules/jquery/dist/jquery.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="706">
-          <caret line="10362" column="11" selection-start-line="10362" selection-start-column="11" selection-end-line="10362" selection-end-column="11" />
+        <state relative-caret-position="-7">
+          <caret line="3224" column="18" selection-start-line="3224" selection-end-line="3416" selection-end-column="2" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#2346#2394#0" />
@@ -485,7 +555,7 @@
             <element signature="e#77685#78318#0" />
             <element signature="e#78365#78678#0" />
             <element signature="e#78699#79745#0" />
-            <element signature="e#80174#82714#0" />
+            <element signature="e#80483#82326#0" />
             <element signature="e#83125#85013#0" />
             <element signature="e#85135#86519#0" />
             <element signature="e#86593#87108#0" />
@@ -572,77 +642,6 @@
             <element signature="e#266016#267458#0" />
             <element signature="e#268040#268516#0" />
             <element signature="e#268776#269391#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jqueryStudy/sizzle/sizzle.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2999">
-          <caret line="994" column="34" selection-start-line="994" selection-start-column="34" selection-end-line="994" selection-end-column="34" />
-          <folding>
-            <element signature="e#13#224#0" />
-            <element signature="e#6176#9227#0" />
-            <element signature="e#9616#9945#0" />
-            <element signature="e#10255#10524#0" />
-            <element signature="e#10747#10857#0" />
-            <element signature="e#11070#11459#0" />
-            <element signature="e#12107#12496#0" />
-            <element signature="e#13059#13323#0" />
-            <element signature="e#13596#24551#0" />
-            <element signature="e#24698#25518#0" />
-            <element signature="e#28101#42938#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/jquery/dist/jquery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="578" selection-start-line="578" selection-end-line="2713" />
-          <folding>
-            <element signature="e#1157#1180#0" />
-            <element signature="e#5831#12906#0" />
-            <element signature="e#13566#14033#0" />
-            <element signature="e#14047#14258#0" />
-            <element signature="e#14279#75019#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jqueryStudy/sizzle/README.md">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jqueryStudy/sizzle/dist/sizzle.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5795">
-          <caret line="569" column="52" selection-start-line="569" selection-start-column="52" selection-end-line="569" selection-end-column="52" />
-          <folding>
-            <element signature="e#4205#4622#0" />
-            <element signature="e#4838#5247#0" />
-            <element signature="e#5889#6250#0" />
-            <element signature="e#6307#9956#0" />
-            <element signature="e#6831#9863#0" />
-            <element signature="e#10895#11163#0" />
-            <element signature="e#12756#14652#0" />
-            <element signature="e#14780#15169#0" />
-            <element signature="e#16269#28277#0" />
-            <element signature="e#28424#29188#0" />
-            <element signature="e#29434#29982#0" />
-            <element signature="e#30305#30889#0" />
-            <element signature="e#31050#31834#0" />
-            <element signature="e#31863#46643#0" />
-            <element signature="e#34308#40911#0" />
-            <element signature="e#40924#46641#0" />
-            <element signature="e#47420#48322#0" />
-            <element signature="e#48808#50720#0" />
-            <element signature="e#50758#50988#0" />
-            <element signature="e#51237#51555#0" />
-            <element signature="e#51647#54221#0" />
-            <element signature="e#54260#56226#0" />
-            <element signature="e#56294#59662#0" />
-            <element signature="e#59743#60419#0" />
-            <element signature="e#60821#62944#0" />
           </folding>
         </state>
       </provider>
