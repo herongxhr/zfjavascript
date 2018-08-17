@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9946d424-51ed-4a84-8ee9-db9ad01b8c1b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/QQ音乐/QQ音乐原版/css/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/QQ音乐/QQ音乐原版/css/index.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QQ音乐/QQ音乐原版/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/QQ音乐/QQ音乐原版/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QQ音乐/QQ音乐原版/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/QQ音乐/QQ音乐原版/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,169 +16,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="jquery.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/jquery/dist/jquery.js">
+      <file leaf-file-name="jquery.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jqueryStudy/dist/jquery.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="439">
-              <caret line="578" selection-start-line="578" selection-end-line="2713" />
-              <folding>
-                <element signature="e#1157#1180#0" />
-                <element signature="e#5831#12906#0" />
-                <element signature="e#13566#14033#0" />
-                <element signature="e#14047#14258#0" />
-                <element signature="e#14279#75019#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jqueryStudy/sizzle/README.md">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="sizzle.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/jqueryStudy/sizzle/dist/sizzle.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5795">
-              <caret line="569" column="52" selection-start-line="569" selection-start-column="52" selection-end-line="569" selection-end-column="52" />
-              <folding>
-                <element signature="e#4205#4622#0" />
-                <element signature="e#4838#5247#0" />
-                <element signature="e#5889#6250#0" />
-                <element signature="e#6307#9956#0" />
-                <element signature="e#6831#9863#0" />
-                <element signature="e#10895#11163#0" />
-                <element signature="e#12756#14652#0" />
-                <element signature="e#14780#15169#0" />
-                <element signature="e#16269#28277#0" />
-                <element signature="e#28424#29188#0" />
-                <element signature="e#29434#29982#0" />
-                <element signature="e#30305#30889#0" />
-                <element signature="e#31050#31834#0" />
-                <element signature="e#31863#46643#0" />
-                <element signature="e#34308#40911#0" />
-                <element signature="e#40924#46641#0" />
-                <element signature="e#47420#48322#0" />
-                <element signature="e#48808#50720#0" />
-                <element signature="e#50758#50988#0" />
-                <element signature="e#51237#51555#0" />
-                <element signature="e#51647#54221#0" />
-                <element signature="e#54260#56226#0" />
-                <element signature="e#56294#59662#0" />
-                <element signature="e#59743#60419#0" />
-                <element signature="e#60821#62944#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jquery.js" pinned="false" current-in-tab="false">
-        <entry file="file://F:/node_modules/jquery/dist/jquery.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="706">
-              <caret line="10362" column="11" selection-start-line="10362" selection-start-column="11" selection-end-line="10362" selection-end-column="11" />
+            <state relative-caret-position="374">
+              <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
-                <element signature="e#2346#2394#0" />
-                <element signature="e#2433#2481#0" />
-                <element signature="e#2521#2821#0" />
-                <element signature="e#2847#3076#0" />
-                <element signature="e#3367#3577#0" />
-                <element signature="e#3726#5490#0" />
                 <element signature="e#5539#7075#0" />
                 <element signature="e#7093#10782#0" />
+                <element signature="e#10823#10882#0" />
                 <element signature="e#11840#76505#0" />
-                <element signature="e#77685#78318#0" />
-                <element signature="e#78365#78678#0" />
                 <element signature="e#78699#79745#0" />
                 <element signature="e#80174#82714#0" />
-                <element signature="e#83125#85013#0" />
-                <element signature="e#85135#86519#0" />
-                <element signature="e#86593#87108#0" />
-                <element signature="e#87260#87402#0" />
+                <element signature="e#83426#84178#0" />
+                <element signature="e#84262#84714#0" />
                 <element signature="e#88224#92534#0" />
+                <element signature="e#88228#88298#0" />
                 <element signature="e#92670#93688#0" />
                 <element signature="e#93705#103378#0" />
                 <element signature="e#104153#104417#0" />
                 <element signature="e#104435#105127#0" />
                 <element signature="e#106209#107176#0" />
-                <element signature="e#107992#111658#0" />
-                <element signature="e#112695#113202#0" />
-                <element signature="e#113219#113790#0" />
-                <element signature="e#113813#115828#0" />
-                <element signature="e#115849#117385#0" />
-                <element signature="e#117408#118775#0" />
-                <element signature="e#120006#121822#0" />
-                <element signature="e#121889#122301#0" />
-                <element signature="e#122339#123551#0" />
-                <element signature="e#123571#123952#0" />
-                <element signature="e#124897#125401#0" />
-                <element signature="e#125498#125680#0" />
-                <element signature="e#125779#127899#0" />
-                <element signature="e#127915#128808#0" />
-                <element signature="e#129280#130483#0" />
-                <element signature="e#130650#142212#0" />
-                <element signature="e#142436#143641#0" />
-                <element signature="e#143843#144573#0" />
-                <element signature="e#146888#147956#0" />
-                <element signature="e#153079#153509#0" />
-                <element signature="e#153526#155757#0" />
-                <element signature="e#155780#159138#0" />
-                <element signature="e#160294#163058#0" />
-                <element signature="e#163106#164513#0" />
-                <element signature="e#164561#164980#0" />
-                <element signature="e#166640#168434#0" />
-                <element signature="e#168488#170045#0" />
-                <element signature="e#170062#174227#0" />
-                <element signature="e#174293#176188#0" />
-                <element signature="e#177194#177695#0" />
-                <element signature="e#177867#178925#0" />
-                <element signature="e#178997#180345#0" />
-                <element signature="e#181972#182291#0" />
-                <element signature="e#182340#186929#0" />
-                <element signature="e#186975#187826#0" />
-                <element signature="e#187876#191190#0" />
-                <element signature="e#191237#192045#0" />
-                <element signature="e#192095#192984#0" />
-                <element signature="e#193005#196278#0" />
-                <element signature="e#198261#198906#0" />
-                <element signature="e#199230#201130#0" />
-                <element signature="e#202350#203800#0" />
-                <element signature="e#204147#204630#0" />
-                <element signature="e#205411#209314#0" />
-                <element signature="e#209362#210824#0" />
-                <element signature="e#210844#212904#0" />
-                <element signature="e#212997#213347#0" />
-                <element signature="e#213600#218263#0" />
-                <element signature="e#218286#218561#0" />
-                <element signature="e#219026#219910#0" />
-                <element signature="e#220059#220460#0" />
-                <element signature="e#220677#221396#0" />
-                <element signature="e#221525#222402#0" />
-                <element signature="e#222423#223418#0" />
-                <element signature="e#224726#225498#0" />
-                <element signature="e#225643#226388#0" />
-                <element signature="e#227053#228320#0" />
-                <element signature="e#228941#230762#0" />
-                <element signature="e#230991#232318#0" />
-                <element signature="e#232517#232722#0" />
-                <element signature="e#232892#244667#0" />
-                <element signature="e#244933#245390#0" />
-                <element signature="e#245680#246940#0" />
-                <element signature="e#247693#251412#0" />
-                <element signature="e#251546#251605#0" />
-                <element signature="e#252226#252890#0" />
-                <element signature="e#253327#255481#0" />
-                <element signature="e#256293#257322#0" />
-                <element signature="e#257411#258992#0" />
-                <element signature="e#259434#260897#0" />
-                <element signature="e#260918#264339#0" />
-                <element signature="e#264482#265063#0" />
-                <element signature="e#265522#265851#0" />
-                <element signature="e#266016#267458#0" />
-                <element signature="e#268040#268516#0" />
-                <element signature="e#268776#269391#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="core.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jqueryStudy/dist/core.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="578">
+              <caret line="41" column="49" lean-forward="true" selection-start-line="41" selection-start-column="49" selection-end-line="41" selection-end-column="49" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="core.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/jquery/src/core.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -195,6 +75,12 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>cache</find>
+      <find>hasD</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -206,13 +92,13 @@
         <option value="$PROJECT_DIR$/QQ音乐/QQ音乐原版/css/index.less" />
         <option value="$PROJECT_DIR$/QQ音乐/QQ音乐原版/js/index.js" />
         <option value="$PROJECT_DIR$/jqueryStudy/sizzle/sizzle.js" />
+        <option value="$PROJECT_DIR$/jqueryStudy/dist/jquery.js" />
+        <option value="$PROJECT_DIR$/jqueryStudy/dist/core.js" />
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
-    <package-json value="$PROJECT_DIR$/package.json" />
-  </component>
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
@@ -222,13 +108,13 @@
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
-      <path value="$PROJECT_DIR$/jqueryStudy/sizzle/package.json" />
-      <path value="$PROJECT_DIR$/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/jquery/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/zepto/package.json" />
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1273" />
-    <option name="width" value="1294" />
+    <option name="x" value="-7" />
+    <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -239,6 +125,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -255,28 +142,12 @@
               <item name="zfjavascript" type="b2602c69:ProjectViewProjectNode" />
               <item name="zfjavascript" type="462c0819:PsiDirectoryNode" />
               <item name="jqueryStudy" type="462c0819:PsiDirectoryNode" />
-              <item name="sizzle" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zfjavascript" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zfjavascript" type="462c0819:PsiDirectoryNode" />
-              <item name="jqueryStudy" type="462c0819:PsiDirectoryNode" />
-              <item name="sizzle" type="462c0819:PsiDirectoryNode" />
               <item name="dist" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zfjavascript" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zfjavascript" type="462c0819:PsiDirectoryNode" />
-              <item name="jqueryStudy" type="462c0819:PsiDirectoryNode" />
-              <item name="sizzle" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-              <item name="sizzle.js" type="620a8d5e:NestingTreeNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -313,27 +184,30 @@
       <workItem from="1534246122011" duration="6008000" />
       <workItem from="1534332430126" duration="9537000" />
       <workItem from="1534407959211" duration="6689000" />
+      <workItem from="1534457825225" duration="17000" />
+      <workItem from="1534457875109" duration="5132000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28030000" />
+    <option name="totallyTimeSpent" value="33179000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1273" y="0" width="1294" height="1047" extended-state="0" />
+    <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21019109" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2820513" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32929516" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32570806" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -349,6 +223,20 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/node_modules/jquery/dist/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9826">
+          <caret line="578" selection-start-line="578" selection-end-line="2713" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/jquery/dist/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9826">
+          <caret line="578" selection-start-line="578" selection-end-line="2713" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/QQ音乐/QQ音乐原版/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="760">
@@ -356,13 +244,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/QQ音乐/QQ音乐原版/json/lyric.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="2034" selection-start-line="6" selection-start-column="2034" selection-end-line="6" selection-end-column="2034" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/QQ音乐/QQ音乐原版/json/lyric.json" />
     <entry file="file://$PROJECT_DIR$/QQ音乐/QQ音乐原版/css/index.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1330">
@@ -439,13 +321,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/QQ音乐/QQ音乐原版/json/lyric.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="2034" selection-start-line="6" selection-start-column="2034" selection-end-line="6" selection-end-column="2034" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/QQ音乐/QQ音乐原版/json/lyric.json" />
     <entry file="file://$PROJECT_DIR$/QQ音乐/QQ音乐原版/css/index.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1330">
@@ -467,182 +343,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://F:/node_modules/jquery/dist/jquery.js">
+    <entry file="file://F:/node_modules/jquery/dist/jquery.js" />
+    <entry file="file://$PROJECT_DIR$/jqueryStudy/sizzle/sizzle.js" />
+    <entry file="file://$PROJECT_DIR$/node_modules/jquery/dist/jquery.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="706">
-          <caret line="10362" column="11" selection-start-line="10362" selection-start-column="11" selection-end-line="10362" selection-end-column="11" />
+        <state relative-caret-position="439">
+          <caret line="578" selection-start-line="578" selection-end-line="2713" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jqueryStudy/sizzle/README.md" />
+    <entry file="file://$PROJECT_DIR$/jqueryStudy/sizzle/dist/sizzle.js" />
+    <entry file="file://$PROJECT_DIR$/jqueryStudy/dist/core.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="41" column="49" lean-forward="true" selection-start-line="41" selection-start-column="49" selection-end-line="41" selection-end-column="49" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <element signature="e#2346#2394#0" />
-            <element signature="e#2433#2481#0" />
-            <element signature="e#2521#2821#0" />
-            <element signature="e#2847#3076#0" />
-            <element signature="e#3367#3577#0" />
-            <element signature="e#3726#5490#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/jquery/src/core.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jqueryStudy/dist/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
             <element signature="e#5539#7075#0" />
             <element signature="e#7093#10782#0" />
+            <element signature="e#10823#10882#0" />
             <element signature="e#11840#76505#0" />
-            <element signature="e#77685#78318#0" />
-            <element signature="e#78365#78678#0" />
             <element signature="e#78699#79745#0" />
             <element signature="e#80174#82714#0" />
-            <element signature="e#83125#85013#0" />
-            <element signature="e#85135#86519#0" />
-            <element signature="e#86593#87108#0" />
-            <element signature="e#87260#87402#0" />
+            <element signature="e#83426#84178#0" />
+            <element signature="e#84262#84714#0" />
             <element signature="e#88224#92534#0" />
+            <element signature="e#88228#88298#0" />
             <element signature="e#92670#93688#0" />
             <element signature="e#93705#103378#0" />
             <element signature="e#104153#104417#0" />
             <element signature="e#104435#105127#0" />
             <element signature="e#106209#107176#0" />
-            <element signature="e#107992#111658#0" />
-            <element signature="e#112695#113202#0" />
-            <element signature="e#113219#113790#0" />
-            <element signature="e#113813#115828#0" />
-            <element signature="e#115849#117385#0" />
-            <element signature="e#117408#118775#0" />
-            <element signature="e#120006#121822#0" />
-            <element signature="e#121889#122301#0" />
-            <element signature="e#122339#123551#0" />
-            <element signature="e#123571#123952#0" />
-            <element signature="e#124897#125401#0" />
-            <element signature="e#125498#125680#0" />
-            <element signature="e#125779#127899#0" />
-            <element signature="e#127915#128808#0" />
-            <element signature="e#129280#130483#0" />
-            <element signature="e#130650#142212#0" />
-            <element signature="e#142436#143641#0" />
-            <element signature="e#143843#144573#0" />
-            <element signature="e#146888#147956#0" />
-            <element signature="e#153079#153509#0" />
-            <element signature="e#153526#155757#0" />
-            <element signature="e#155780#159138#0" />
-            <element signature="e#160294#163058#0" />
-            <element signature="e#163106#164513#0" />
-            <element signature="e#164561#164980#0" />
-            <element signature="e#166640#168434#0" />
-            <element signature="e#168488#170045#0" />
-            <element signature="e#170062#174227#0" />
-            <element signature="e#174293#176188#0" />
-            <element signature="e#177194#177695#0" />
-            <element signature="e#177867#178925#0" />
-            <element signature="e#178997#180345#0" />
-            <element signature="e#181972#182291#0" />
-            <element signature="e#182340#186929#0" />
-            <element signature="e#186975#187826#0" />
-            <element signature="e#187876#191190#0" />
-            <element signature="e#191237#192045#0" />
-            <element signature="e#192095#192984#0" />
-            <element signature="e#193005#196278#0" />
-            <element signature="e#198261#198906#0" />
-            <element signature="e#199230#201130#0" />
-            <element signature="e#202350#203800#0" />
-            <element signature="e#204147#204630#0" />
-            <element signature="e#205411#209314#0" />
-            <element signature="e#209362#210824#0" />
-            <element signature="e#210844#212904#0" />
-            <element signature="e#212997#213347#0" />
-            <element signature="e#213600#218263#0" />
-            <element signature="e#218286#218561#0" />
-            <element signature="e#219026#219910#0" />
-            <element signature="e#220059#220460#0" />
-            <element signature="e#220677#221396#0" />
-            <element signature="e#221525#222402#0" />
-            <element signature="e#222423#223418#0" />
-            <element signature="e#224726#225498#0" />
-            <element signature="e#225643#226388#0" />
-            <element signature="e#227053#228320#0" />
-            <element signature="e#228941#230762#0" />
-            <element signature="e#230991#232318#0" />
-            <element signature="e#232517#232722#0" />
-            <element signature="e#232892#244667#0" />
-            <element signature="e#244933#245390#0" />
-            <element signature="e#245680#246940#0" />
-            <element signature="e#247693#251412#0" />
-            <element signature="e#251546#251605#0" />
-            <element signature="e#252226#252890#0" />
-            <element signature="e#253327#255481#0" />
-            <element signature="e#256293#257322#0" />
-            <element signature="e#257411#258992#0" />
-            <element signature="e#259434#260897#0" />
-            <element signature="e#260918#264339#0" />
-            <element signature="e#264482#265063#0" />
-            <element signature="e#265522#265851#0" />
-            <element signature="e#266016#267458#0" />
-            <element signature="e#268040#268516#0" />
-            <element signature="e#268776#269391#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jqueryStudy/sizzle/sizzle.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2999">
-          <caret line="994" column="34" selection-start-line="994" selection-start-column="34" selection-end-line="994" selection-end-column="34" />
-          <folding>
-            <element signature="e#13#224#0" />
-            <element signature="e#6176#9227#0" />
-            <element signature="e#9616#9945#0" />
-            <element signature="e#10255#10524#0" />
-            <element signature="e#10747#10857#0" />
-            <element signature="e#11070#11459#0" />
-            <element signature="e#12107#12496#0" />
-            <element signature="e#13059#13323#0" />
-            <element signature="e#13596#24551#0" />
-            <element signature="e#24698#25518#0" />
-            <element signature="e#28101#42938#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/jquery/dist/jquery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="578" selection-start-line="578" selection-end-line="2713" />
-          <folding>
-            <element signature="e#1157#1180#0" />
-            <element signature="e#5831#12906#0" />
-            <element signature="e#13566#14033#0" />
-            <element signature="e#14047#14258#0" />
-            <element signature="e#14279#75019#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jqueryStudy/sizzle/README.md">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jqueryStudy/sizzle/dist/sizzle.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5795">
-          <caret line="569" column="52" selection-start-line="569" selection-start-column="52" selection-end-line="569" selection-end-column="52" />
-          <folding>
-            <element signature="e#4205#4622#0" />
-            <element signature="e#4838#5247#0" />
-            <element signature="e#5889#6250#0" />
-            <element signature="e#6307#9956#0" />
-            <element signature="e#6831#9863#0" />
-            <element signature="e#10895#11163#0" />
-            <element signature="e#12756#14652#0" />
-            <element signature="e#14780#15169#0" />
-            <element signature="e#16269#28277#0" />
-            <element signature="e#28424#29188#0" />
-            <element signature="e#29434#29982#0" />
-            <element signature="e#30305#30889#0" />
-            <element signature="e#31050#31834#0" />
-            <element signature="e#31863#46643#0" />
-            <element signature="e#34308#40911#0" />
-            <element signature="e#40924#46641#0" />
-            <element signature="e#47420#48322#0" />
-            <element signature="e#48808#50720#0" />
-            <element signature="e#50758#50988#0" />
-            <element signature="e#51237#51555#0" />
-            <element signature="e#51647#54221#0" />
-            <element signature="e#54260#56226#0" />
-            <element signature="e#56294#59662#0" />
-            <element signature="e#59743#60419#0" />
-            <element signature="e#60821#62944#0" />
           </folding>
         </state>
       </provider>
