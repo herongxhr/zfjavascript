@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div class="box2">
+    <div><span>姓名</span><input type="text" id="username"></div>
+    <div><span>年龄</span><input type="text" id="age"></div>
+    <div><span>电话</span><input type="text" id="phone"></div>
+    <div><span>地址</span><input type="text" id="address"></div>
+    <div class="submit" id="submit">提交</div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script>
+    //点击提交，发送post请求，把数据通过请求体传输给服务器
+    let submit = document.getElementById('submit'),
+        username = document.getElementById('username'),
+        age = document.getElementById('age'),
+        phone = document.getElementById('phone'),
+        address = document.getElementById('address');
+    
+    submit.onclick = function () {
+        //每新增一个客户，相当于向服务器json文件中注入一条数据；
+        $.ajax({
+            url:'/addInfo',
+            type:'post',
+            data:{
+                username:username.value,
+                age:age.value,
+                phone:phone.value,
+                address:address.value
+            }
+        })
+    }
+
+</script>
+</body>
+</html>

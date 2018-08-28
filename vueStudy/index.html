@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <input type="text" v-model="flag">
+    <!--v-text:把数据绑定DOM元素中，具有响应式；并且会把之前的进行覆盖-->
+    <div v-text="title"></div>
+    <!--v-html可识别标签-->
+    <div v-html="title"></div>
+    <!--条件显示，当tt值为true时显示-->
+    <!--v-if中的值可以为js表达式-->
+    <div v-if="0>1">电脑</div>
+    <div v-else-if="10<1">手机</div>
+    <div v-else>电视</div>
+    <p v-show="yy">快下课了</p>
+    <!--v-bind:用于动态绑定属性-->
+    <!--v-bind:最后简写成一个:就可以取到动态属性-->
+    <img :src="imgUrl" alt="">
+    <!--for 在循环对象时，如果只定义一个值，则返回属性值-->
+    <!--如果有两个值，第二个值为属性名-->
+    <!--如果有三个值，第三个值为索引-->
+    <li v-for="(item,index) in arr">{{index}}:{{item}}</li>
+    <li v-for="(a,b,c) in obj">{{b}}: {{a}} in {{c}}</li>
+    <div v-for="(item,index) in fruits">
+        <h3>{{index+1}}.{{item.name}}</h3>
+        <ul>
+            <li v-for="(value1,index1) in item.color ">{{index+1}}.{{index1+1}}{{value1}}
+            </li>
+        </ul>
+    </div>
+</div>
+<script src="node_modules/vue/dist/vue.js"></script>
+<script>
+    //vue中常见的指令：
+    // v-mode
+    // v-text:把数据绑定DOM元素中，具有响应式；并且会把之前的进行覆盖
+    // v-html
+    // v-for:https://cn.vuejs.org/v2/api/#v-for
+    // v-once
+    // v-if
+    // v-else-if
+    // v-show
+    // v-bind
+    // v-on
+    // v-bind
+    // v-pre
+
+    let vm = new Vue({
+        el: "#app",
+        data: {
+            flag: "你很帅",
+            title: "<h2>你很漂亮</h2>",
+            tt: true,
+            yy: false,
+            imgUrl: "svn.png",
+            img: ["1.png", "2.png"],
+            arr: ["a", "b", "c"],
+            obj: {
+                name: "he",
+                age: 35
+            },
+            fruits: [
+                {name: '香蕉', color: ['green', 'yellow']},
+                {name: '苹果', color: ['red', 'green', 'yellow']},
+                {name: '西瓜', color: ['pink']}
+            ]
+        }
+    })
+</script>
+</body>
+</html>
