@@ -8,6 +8,7 @@
 <div id="app">
     {{message}}
     <input type="text" v-model="message">
+    <input type="checkbox" v-model="isChecked">
     <ol>
         <todo-item v-bind:message="name" v-bind:title="message"></todo-item>
     </ol>
@@ -24,7 +25,8 @@
         el:"#app",
         data:{
             name:'herong',
-            message:"Your name"
+            message:"Your name",
+            isChecked:true
         }
     });
 
