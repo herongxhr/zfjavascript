@@ -2930,7 +2930,7 @@
                     selector[selector.length - 1] === ">" &&
                     selector.length >= 3) {
 
-                    // Assume that strings that start and end with <> are HTML and skip the regex check
+                    // Assume 假设 that strings that start and end with <> are HTML and skip the regex check
                     match = [null, selector, null];
 
                 } else {
@@ -2945,7 +2945,7 @@
                         context = context instanceof jQuery ? context[0] : context;
 
                         // Option to run scripts is true for back-compat
-                        // Intentionally let the error be thrown if parseHTML is not present
+                        // Intentionally故意地，有意地 let the error be thrown if parseHTML is not present
                         jQuery.merge(this, jQuery.parseHTML(
                             match[1],
                             context && context.nodeType ? context.ownerDocument || context : document,

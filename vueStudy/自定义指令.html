@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #app div {
+            width: 100px;
+            height: 100px;
+            background: red;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        #app :nth-child(2) {
+            top: 200px;
+        }
+
+    </style>
+</head>
+<body>
+<div id="app">
+    <div v-drag>1</div>
+    <div v-drag>2</div>
+</div>
+
+<script src="node_modules/vue/dist/vue.js"></script>
+<script>
+    let vm = new Vue({
+        el: "#app",
+        data: {},
+        //存储自定义的指令
+        //当页面刷新或者第一次进来；初始化vue实例，这个directives中的方法会自动执行
+        directives: {
+            //不需要写前缀v-,是一个函数
+            //第一个参数就是所控制的元素
+            drag(el) {
+                //实现一个拖拽效果
+                el.onmousedown = function (e) {
+                    // 也可以记录当前鼠标距离盒子左边的距离；或上边的距离
+                    //记录相对于盒子的位置；
+                    console.log(e);
+                    console.log(this);
+                    //鼠标事件中的坐标值：
+                    //一张图看懂offsetX、clientX、screenX、pageX
+                    //ie678不识别pageX
+                    // 原帖:http://www.2cto.com/kf/201409/333401.html
+                    //screen是指显示器的整个屏幕，page是指整个页面包括了已经滚动隐藏的部分
+                    //client指页面中可视部分，不包括已经滚动隐藏的部分
+                    //offset是指相对于事件发生的元素即this
+                    let disX = e.pageX - this.offsetLeft;
+                    let disY = e.pageY - this.offsetTop;
+                    document.onmousemove = function (e) {
+                        el.style.left = e.pageX - disX + "px";
+                        el.style.top = e.pageY - disY + "px";
+                    };
+                    document.onmouseup = function () {
+                        document.onmousemove = document.onmouseup = null;
+                    }
+                }
+            }
+        }
+    })
+
+</script>
+</body>
+
+</html>

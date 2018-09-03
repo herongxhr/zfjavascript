@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .x{
+            font-size: 30px;
+        }
+        .y{
+            color:red;
+        }
+        .z{
+            background:lightgreen;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <div class="x" :class="{y:true,z:true}">今天下雨了！</div>
+    <!--只取对象的某一属性值-->
+    <div class="x" :class="{y:true,z:true}[y]">今天又下雨了！</div>
+
+    <!--v-bind:class属性值是一个数组，数据成员是对应的class; -->
+    <div :class="['x','y']">今天凉快了！</div>
+    <!--只取数组中的某一项-->
+    <div :class="['x','y'][0]">今天真凉快了！</div>
+    <!--实现隔行变色-->
+    <div v-for="(val,index) in 10" :class="{z:index%2}">{{val}}</div>
+
+    <!--v-bind:style-->
+    <!--用对象表示值，属性名和属性值表示一组style样式-->
+    <div :style="{color:'white',background:'gray'}">谷歌浏览器</div>
+    <!--用数组表示值，数组的项必须是对象才可以表示一组键值对-->
+    <div :style="[style1,style2]">火狐浏览器</div>
+
+
+
+</div>
+<script src="node_modules/vue/dist/vue.js"></script>
+<script>
+    //v-bind用来绑定属性，包括class和style属性
+    //v-bind:class可以是一个对象，那么对象的属性名就是对应的class名；
+    //对应的属性值控制当前class是否生效，true为生效
+    //v-bind:class的属性不会覆盖原生的class。
+
+
+    let vm = new Vue({
+        el:"#app",
+        data:{
+            style1:{background:'pink'},
+            style2:{opacity:0.5}
+
+        }
+    })
+</script>
+</body>
+</html>

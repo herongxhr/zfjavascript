@@ -45,6 +45,11 @@
             products: [],
             checkAll: true
         },
+        computed:{
+            total:function () {
+                return this.product
+            }
+        },
         filters: {
             toFixed(num, n) {
                 return num.toFixed(n);
