@@ -86,7 +86,7 @@
     };
 
 
-    var preservedScriptAttributes = {
+    var preservedScriptAttributes = {//保藏的
         type: true,
         src: true,
         noModule: true
@@ -116,6 +116,10 @@
         }
 
         // Support: Android <=2.3 only (functionish RegExp)
+        //运算符优先级
+        // typeof 与 ! 同级
+        // 比较运算符(== ===) > 逻辑运算符(! > && > ||)
+        // 最后三元运算符
         return typeof obj === "object" || typeof obj === "function" ?
             class2type[toString.call(obj)] || "object" :
             typeof obj;

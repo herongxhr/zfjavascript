@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head id="h">
+<head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
@@ -11,10 +11,16 @@
 <ul id="resultList"></ul>
 </body>
 <script>
+    //预存的script标签属性
+    let preservedScriptAttributes = {
+        type: true,
+        src: true,
+        noModule: true
+    };
+
     //获取元素
     let search = document.getElementById('search'),
         resultList = document.getElementById('resultList');
-        headEle = document.getElementById('h');
 
     //定义一个函数用来确定数据的显示方式
     let localHandler = function localHandler(data) {
@@ -26,23 +32,45 @@
         resultList.innerHTML = html;
     };
 
+    /*
+    * 向document中添加script标签及代码
+    * @param {string} 代码文本内容
+    * @param {object} document对象
+    * @param {object} 设置script属性的对象实参
+    * */
+    let DOMEval = function DOMEval(code, doc, node) {
+        doc = doc || document;
+        var i,
+            script = doc.createElement("script");
+
+        script.text = code;
+
+        if (node) {
+            for (i in preservedScriptAttributes) {
+                if (node[i]) {
+                    script[i] = node[i];
+                }
+            }
+        }
+        //先在head加入script标签，执行后，再删除刚生成的sciprt标签
+        doc.head.appendChild(script).parentNode.removeChild(script);
+    };
+
     //搜索框停止输入内容时，执行函数
     //https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=s&json=1&cb=fn
-    search.onkeyup = function(){
+    search.onkeyup = function () {
 
         //动态生成script标签，并让src指向远程js文件
         //定制src地址，把想要让远程执行的函数以参数callback的形式告诉服务端
-        //服务端地址
-        let srcUrl ='https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=';
-        //创建一个script元素
-        let jsonpScript = document.createElement('script');
-        //设置script元素的src地址
-        //定制src地址，把本地用来显示数据的函数以参数callback的形式传递过去
-        jsonpScript.src = srcUrl+ this.value +'&json=1&cb=localHandler';
-        headEle.appendChild(jsonpScript);
-        //删除onkeyup时生成的script标签
-        jsonpScript.remove();
-    };
+        //script标签实参：服务端地址
+        let node = {
+            type:'text/javascript',
+            src:'https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd='+ this.value + '&json=1&cb=localHandler'
+        };
+
+        //用DOMEval()创建一个script元素
+        DOMEval('',null,node);
+     };
 
 
 </script>
