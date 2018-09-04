@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head id="h">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--关键字输入框-->
+<input type="text" id="search">
+<!--返回的结果清单-->
+<ul id="resultList"></ul>
+</body>
+<script>
+    //获取元素
+    let search = document.getElementById('search'),
+        resultList = document.getElementById('resultList');
+        headEle = document.getElementById('h');
+
+    //定义一个函数用来确定数据的显示方式
+    let localHandler = function localHandler(data) {
+        console.log(data);
+        let html = '';
+        data.s.forEach(item => {
+            html += `<li>${item}</li>`
+        });
+        resultList.innerHTML = html;
+    };
+
+    //搜索框停止输入内容时，执行函数
+    //https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=s&json=1&cb=fn
+    search.onkeyup = function(){
+
+        //动态生成script标签，并让src指向远程js文件
+        //定制src地址，把想要让远程执行的函数以参数callback的形式告诉服务端
+        //服务端地址
+        let srcUrl ='https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=';
+        //创建一个script元素
+        let jsonpScript = document.createElement('script');
+        //设置script元素的src地址
+        //定制src地址，把本地用来显示数据的函数以参数callback的形式传递过去
+        jsonpScript.src = srcUrl+ this.value +'&json=1&cb=localHandler';
+        headEle.appendChild(jsonpScript);
+        //删除onkeyup时生成的script标签
+        jsonpScript.remove();
+    };
+
+
+</script>
+
+</html>

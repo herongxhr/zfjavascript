@@ -1,7 +1,6 @@
-
 let fs = require("fs");
 
-let con = fs.readFileSync("package.json","utf8");
+let jquery = require("jquery")
 
-console.log(con);
-
+console.log(this===module.exports);
+console.log(jquery);
