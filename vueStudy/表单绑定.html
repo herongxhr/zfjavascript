@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <span>Multiline message is:</span>
+        <p style="white-space:pre-wrap;">{{ message }}</p>
+        <br>
+        <textarea v-model="message" placeholder="add multiline lines"></textarea>
+        <!-- 单选框 -->
+        <p></p>
+        <!-- 单个复选框，绑定到布尔值 -->
+        <input type="checkbox" id="checkbox" v-model="checked">
+        <label for="checkbox">{{checked}}</label>
+        <!-- 多个复选框，将复选框的value属性值绑定到同一个数组 -->
+        <p></p>
+        <input type="checkbox" id="jack" value="Jack" v-model="checkedNames">
+        <label for="jack">Jack</label>
+        <input type="checkbox" id="john" value="John" v-model="checkedNames">
+        <label for="john">John</label>
+        <input type="checkbox" id="mike" value="Mike" v-model="checkedNames">
+        <label for="mike">Mike</label>
+        <br>
+        <span>Checked names: {{ checkedNames }}</span>
+        <p></p>
+        <!-- 单选按钮，将单选按钮的value属性值绑定到picked值 -->
+        <!-- 只要单选按钮的value值不同，就是不同的单选按钮，与id无关 -->
+        <input type="radio" id="one" value="One" v-model="picked">
+        <label for="one">One</label>
+        <br>
+        <input type="radio" id="one" value="one" v-model="picked">
+        <label for="one">Two</label>
+        <br>
+        <input type="radio" id="two" value="oe" v-model="picked">
+        <label for="two">Two</label>
+        <br>
+        <span>Picked: {{ picked }}</span>
+        <p></p>
+        <!-- 选择框，将选项中value属性值绑定，如果value属性不存在，则与选项的文本值进行绑定-->
+        <select v-model="selected">
+            <option disabled value="">请选择</option>
+            <option>A</option>
+            <option>B</option>
+            <option>C</option>
+        </select>
+        <span>Selected:{{selected}}</span>
+        <p></p>
+        <!-- 多选选择框，绑定选项value属性值到一个数组 -->
+        <select v-model="choose" multiple style="width: 50px;">
+            <option>A</option>
+            <option>B</option>
+            <option>C</option>
+        </select>
+        <br>
+        <span>Choose: {{ choose }}</span>
+        <p></p>
+        <!-- 值绑定 -->
+        <input type="checkbox" id="checkbox1" v-model="toggle"true-value="yes" false-value="no">
+        <label for="checkbox1">{{toggle}}</label>
+        <p></p>
+        <!-- 选择框的值绑定 -->
+        <!-- 原来绑定的是选项的value值的文本，但通过v-bind又将value绑定到了另外一个变量，则最终绑定到了变量 -->
+        <select v-model="bindSelect">
+            <option :value="bindSelectValue">123</option>
+        </select>
+        <span>The value is:{{bindSelect}}</span>
+        <p></p>
+        <!-- .lazy修饰符 -->
+        <!-- 对于input，要等到失去焦点才会改变 -->
+        <input type="text" v-model.lazy.trim="msg">
+        <label for="lazy-input">{{msg}}</label>
+    </div>
+    <script src="./node_modules/vue/dist/vue.js"></script>
+    <script>
+        let vm = new Vue({
+            el: "#app",
+            data: {
+                message: '',
+                checked: 0,
+                checkedNames: [],
+                picked: '',
+                //单选框
+                selected: '',
+                //多选选择框
+                choose:[],
+                //值绑定
+                toggle:'yes/no',
+                bindSelectValue:{a:1},
+                bindSelect:'',
+                msg:''
+            }
+        })
+    </script>
+</body>
+
+</html>

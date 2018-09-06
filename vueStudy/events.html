@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <div v-on:click.left="getKeyName">
+            <button>key</button>
+        </div>
+    </div>
+    <script src="./node_modules/vue/dist/vue.js"></script>
+    <script>
+        let vm = new Vue({
+            el: "#app",
+            data: {
+                name: 0,
+            },
+            methods: {
+                getKeyName: function (event) {
+                    console.log(event.currentTarget);
+                    console.log(event.target);
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
