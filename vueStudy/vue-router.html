@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>vue-router</title>
+</head>
+
+<body>
+    <div id="app">
+        <!-- to是router-link必须的属性 -->
+        <!-- router-link 是一个自定义的标签 -->
+        <!-- tag属性用来控制用何种标签进行显示，默认是A标签 -->
+        <router-link to="home" tag="button">首页</router-link>
+        <router-link to="list" tag="button">列表</router-link>
+        <!-- 是一个标签，也是一个全局组件 -->
+        <!-- 用来显示真实的对应的组件 -->
+        <router-view></router-view>
+    </div>
+    <script src="./node_modules/vue/dist/vue.js"></script>
+    <script src="./node_modules/vue-router/dist/vue-router.js"></script>
+    <script>
+
+        //根据不同的路径，执行不同的内容
+        //路由：根据路径切换
+        //1：创建组件
+        //2：配置路由映射表
+        //3：路由映射表放进VueRouter中进行注册
+        let home = {
+            template: "<div>首页</div>"
+        };
+        let list = {
+            template: "<div>列表</div>"
+        };
+        //路由映射表
+        //路径必须加/
+        //奇怪的是这个routes不能用别的名字
+        let routes = [
+            { path: "/home", component: home },
+            { path: "/list", component: list }
+        ];
+        //vue-router提供的一个构造函数
+          let router = new VueRouter({
+            //路由映射表；
+            routes
+        });
+
+        let vm = new Vue({
+            el: "#app",
+            data: {},
+            router
+        });
+        console.log(router);
+    </script>
+</body>
+
+</html>

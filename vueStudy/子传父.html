@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>珠峰培训</title>
+</head>
+
+<body>
+    <div id="app">
+        父亲：{{post['money'][0]}}
+        <son v-bind="post"></son>
+        <base-input style="width:500px;" placeholder="Enter your name!"></base-input>
+    </div>
+    <script src="./node_modules/vue/dist/vue.js"></script>
+    <script>
+        Vue.component('base-input', {
+            inheritAttrs: false,
+            props: ['label', 'value'],
+            template: `
+                        <label>
+                        {{ label }}
+                        <input
+                            v-bind="$attrs"
+                            v-bind:value="value"
+                            v-on:input="$emit('input', $event.target.value)"
+                        >
+                        </label>
+                        `
+        })
+        let vm = new Vue({
+            el: '#app',
+            data: {
+                money: ["400", "500"],
+                post: {
+                    id: 1,
+                    title: "My Journey with vue",
+                    money: [400, 500],
+                    name: {},
+                    //多传的prop会成为组件根元素的一个属性
+                    sex: 'male'
+                }
+            },
+            components: {
+                son: {
+                    data: function () {
+                        return {
+                            mydata: this.money
+                        };
+                    },
+                    //组件的根元素不继承特性
+                    inheritAttrs: false,
+                    props: {
+                        //接受一个值表明可接受数据类型，null表示任意类型
+                        id: null,
+                        title: String,
+                        //接受一个数组来表明可接受的数据类型有哪些
+                        money: [Number, Array],
+                        //用一个对象来表明可接受的数据类型，是否必填，是否带默认值，定义验证函数等
+                        name: {
+                            //可接受的类型
+                            type: Object,
+                            //默认值 
+                            default: {
+                                xing: 'he'
+                            },
+                            //是否必填
+                            required: true,
+                            //自定义验证函数
+                            validator: function (value) {
+                                //这个值必须匹配下列字符串中的一个
+                                return value;
+                            }
+
+                        }
+
+                    },
+                    template: "<div>儿子：{{money[0]}}<button @click='fn'>多要钱</button><p>{{id}}:{{title}}</p></div>",
+                    methods: {
+                        fn() {
+                            this.money.shift();
+                            console.log(this.$attrs);
+                        }
+                    }
+                }
+            }
+        });
+
+    </script>
+</body>
+
+</html>
