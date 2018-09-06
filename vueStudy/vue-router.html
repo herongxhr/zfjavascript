@@ -30,7 +30,14 @@
             template: "<div>首页</div>"
         };
         let list = {
-            template: "<div>列表</div>"
+            template: "<div>列表</div>",
+            methods:{
+                goBack(){
+                    //返回上一个组件
+                    this.$router.history.go(-1);
+                }
+
+            }
         };
         //路由映射表
         //路径必须加/

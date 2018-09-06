@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <!-- 如果没有/，默认会在地址后拼接上当前路径，加/则会回到根路径 -->
+        <router-link to="/home">首页</router-link>
+        <router-link to="/detail">详情页</router-link>
+        <router-view></router-view>
+    </div>
+    <template id="detail">
+        <div>
+            <!-- 当前profile和about是detail的一个子路由 -->
+            <router-link to="/detail/profile">个人中心</router-link>
+            <router-link to="/detail/about">关于我</router-link>
+            <router-view></router-view>
+        </div>
+    </template>
+    <script src="./node_modules/vue/dist/vue.js"></script>
+    <script src="./node_modules/vue-router/dist/vue-router.js"></script>
+    <script>
+        //创建组件
+        let home = {
+            template: "<div>首页</div>"
+        };
+        let list = {
+            template: "#detail"
+        };
+        let profile = {
+            template: "<div>profile</div>"
+        };
+        let about = {
+            template: "<div>about</div>"
+        };
+        //2.配置路由映射表
+        let routes = [
+            { path: "/home", component: home },
+            {
+                path: "/detail",
+                component: list,
+                //children:配置当前路由的子路由；
+                //子路由中不需要加/，如果加上，相当于一级路由
+                //如果路由写到children中，会把path拼接到上级后面
+                //相当于/detail/porfile，/也不需要加
+                children: [
+                    { path: "profile", component: profile },
+                    { path: "about", component: about }
+                ]
+            },
+            { path: "*", component: home }
+        ];
+
+        let router = new VueRouter({
+            routes
+        });
+
+        let vm = new Vue({
+            el: "#app",
+            data: {
+
+            },
+            router
+        })
+    </script>
+</body>
+
+</html>

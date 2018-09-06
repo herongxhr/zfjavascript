@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <router-link to="/article/1/a">商品1</router-link>
+        <router-link to="/article/2/b">商品2</router-link>
+        <router-link to="/article/3/c">商品3</router-link>
+        <router-view></router-view>
+    </div>
+    <script src="./node_modules/vue/dist/vue.js"></script>
+    <script src="./node_modules/vue-router/dist/vue-router.js"></script>
+    <script>
+        //$router:上面放的是一些方法
+        //$route：放了一些键值对
+        let article = {
+            template: "<div>第{{$route.params.id}}篇文章</div>"
+        }
+    
+        //配置路由映射表
+        let routes = [
+            {path:"/article/:id/:txt",component:article}
+        ]
+        //构造实例
+        let router = new VueRouter({
+            routes
+        })
+        //构造vm实例
+        let vm = new Vue({
+            el:"#app",
+            data:{},
+            router
+        })
+    </script>
+
+</body>
+
+</html>
