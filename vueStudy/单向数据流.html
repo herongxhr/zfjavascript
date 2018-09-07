@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+    <div id="app">
+        <blog-post v-bind:init="parentInit"></blog-post>
+        <p>父值为：{{parentInit}}</p>
+    </div>
+    <script src="./node_modules/vue/dist/vue.js"></script>
+    <script>
+        Vue.component('blog-post', {
+            data: function () {
+                return {
+                    counter: this.init
+                }
+            },
+            props: ['init'],
+            computed: {
+                title: {
+                    get: function () {
+                        return 'My name is' + this.init;
+                    },
+                    set: function (value) {
+                        this.init=value;
+
+                    }
+                }
+            },
+            template: `<div>
+                          <input id="counter" v-model="title" placeholder="输入内容">
+                          <label for='counter'>组件值为：{{title}}</label>
+                          <p>props init is {{init}}</p>
+                       </div>
+                `
+        });
+
+        let vm = new Vue({
+            el: "#app",
+            data: {
+                parentInit: "abc"
+            },
+        })
+    </script>
+
+</body>
+
+</html>
